@@ -10,7 +10,7 @@ This is a basic pub-sub project using NATS JetStream. There is a publisher who p
 ```sudo docker run -p 4222:4222 -ti nats:latest -js```
 
 ### Step 2: Run nats-box for nats cli in a different terminal
-[nats box](https://github.com/nats-io/nats-box)
+[nats box](https://github.com/nats-io/nats-box)  
 ```sudo docker run --rm -it synadia/nats-box:latest```
 
 ### Step 3: Create a stream
@@ -24,6 +24,6 @@ Enter nats stream, add <Stream name> (in this example we will name the stream "m
 ```go run consumer/main.go```
 
 ## Resources
-[NATS - Go Client](https://github.com/nats-io/nats.go)
-[JetStream Walkthrough](https://docs.nats.io/nats-concepts/jetstream/js_walkthrough)
+[NATS - Go Client](https://github.com/nats-io/nats.go)  
+[JetStream Walkthrough](https://docs.nats.io/nats-concepts/jetstream/js_walkthrough)  
 [Building Distributed Event Streaming Systems In Go With NATS JetStream](https://shijuvar.medium.com/building-distributed-event-streaming-systems-in-go-with-nats-jetstream-3938e6dc7a13)
