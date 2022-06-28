@@ -6,7 +6,7 @@ import (
 	"github.com/nats-io/nats.go"
 )
 
-func main(){
+func main() {
 	// Connect to a server
 	nc, _ := nats.Connect(nats.DefaultURL)
 	if nc != nil {
@@ -18,12 +18,12 @@ func main(){
 	if err != nil {
 		log.Println("Error creating stream context!")
 	}
-	
+
 	// Simple Jetstream Publisher
 	_, err = js.Publish("jet", []byte("Hello World"))
 	if err != nil {
 		log.Println("Message not published")
-	}	
+	}
 
 	defer nc.Close()
 }
